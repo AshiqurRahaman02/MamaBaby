@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Orders</title>
+    <title>Baby clothes</title>
     <link  rel="icon" href="./image/favicon-32x32.png" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <style>
-        body{
+<style>
+    body{
             margin: 0px;
             padding: 0px;
         }
@@ -69,10 +69,10 @@
             width: 500px;
             text-align: center;
             justify-content: space-between;
+            cursor: pointer;
         }
         .menu>div:nth-child(2) h3{
             margin-bottom: -5px;
-            cursor: pointer;
             font-size: 20px;
         }
         .menu>div:nth-child(2) p{
@@ -117,10 +117,8 @@
             height: 1px;
             background-color: rgb(0, 122, 222);
         }
-        
         .details{
             background-color: rgb(249, 246, 241);
-            margin-top: 20px;
             padding: 20px;
         }
         .details a:hover{
@@ -240,20 +238,176 @@
         .DISCLAIMERS h4{
             color: rgb(94, 92, 92);
         }
-        .ordernow{
+        #ab{
+            font-size: 13px;
+            margin-left: 3%;
+        }
+        .container{
+            width: 80%;
+            /* border: 1px solid teal; */
+            margin: auto;
+        }
+        .container>h2:nth-child(1){
             text-align: center;
-            font-size: 30px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(117, 118, 119);
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-bottom: 0px;
+            color: rgb(23, 177, 243);
         }
-        .ordernow a{
-            font-family: none;
-            background-color: aquamarine;
-            padding: 5px;
-            border-radius: 10px;
-            color: rgb(0, 55, 8);
+        .container>p:nth-child(2){
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-    </style>
+        .line{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 100px;
+        }
+        .line>div{
+            display: flex;
+            border: 2px solid rgb(220, 218, 218);
+
+        }
+        .line>div>img{
+            width: 50%;
+        }
+        .line>div>div{
+            background-color: rgb(228, 228, 228);
+            padding: 30px;
+        }
+        .line>div>div>h2{
+            /* margin-top: 25%; */
+            margin-left: 5%;
+            font-size: 35px;
+            color: rgb(23, 177, 243);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .line>div>div>h4{
+            margin-left: 5%;
+            padding-right: 17%;
+            text-align: justify;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+
+        }
+        .line>div>div>a{
+            margin-left: 5%;
+            padding-right: 17%;
+            text-align: justify;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+
+        }
+        .line>div>div>a:hover{
+            text-decoration: underline;
+            text-shadow: black;
+        }
+        .line~hr~h3{
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            color: rgb(23, 177, 243);
+        }
+        .gender{
+            width: 30%;
+            
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-left: 33%;
+        }
+        .gender img{
+            border-radius: 50%;
+        }
+        .gender a{
+            display: block;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        .size{
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            text-align: center;
+            height: 180px;
+            cursor: pointer;
+        }
+        .size h1{
+            background-color: rgb(0, 183, 255);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 150px;
+            
+        }
+        .size h1:hover{
+            text-decoration: underline;
+            
+        }
+        .category{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            margin-bottom: 150px;
+        }
+        .category>div img{
+            width: 100%;
+        }
+        .blog>div:nth-child(1){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 10px;
+            
+        }
+        .blog>div:nth-child(1)>img{
+            width: 80%;
+        }
+        .blog>div:nth-child(1)>div{
+            background-color: antiquewhite;
+            margin-left: -152px;
+            padding: 30px;
+        }
+        .blog>div:nth-child(1)>div>h2{
+            margin-top: 200px;
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .blog>div:nth-child(1)>div>h3{
+            /* margin-top: 200px; */
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(101, 101, 101);
+        }
+        .blog>div:nth-child(1)>div>a{
+            
+            font-size:15px;
+            
+            color: rgb(47, 0, 255);
+        }
+        .blogs{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 160px;
+        }
+        .blogs img{
+            width: 100%;
+        }
+        .blogs~button{
+            display: block;
+            margin: auto;
+            border: 1px dotted rgb(136, 136, 136);
+            width: 10%;
+            height: 40PX;
+            margin-bottom: 100px;
+            cursor: pointer;
+        }
+</style>
 </head>
 <body>
     <div class="nav">
@@ -266,7 +420,7 @@
         <div>
             <div>
                 <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23444%22 d%3D%22M24.205 24.963c.008-.105.012-.207.012-.299 0-2.908-1.564-5.892-3.895-7.612.495-.82.767-1.756.767-2.725 0-2.927-2.399-5.309-5.35-5.309-2.948 0-5.348 2.382-5.348 5.309 0 1.073.332 2.12.933 2.995-2.147 1.76-3.542 4.587-3.542 7.343 0 .092.004.193.012.299-2.432-2.225-3.968-5.413-3.968-8.962 0-6.709 5.461-12.17 12.174-12.17s12.174 5.46 12.174 12.17c0 3.548-1.536 6.736-3.969 8.961zm-14.597-.299c0-2.459 1.451-5.095 3.529-6.409l.991-.627-.847-.811a3.454 3.454 0 01-1.064-2.489c0-1.92 1.58-3.479 3.521-3.479 1.943 0 3.523 1.56 3.523 3.478 0 .864-.325 1.694-.915 2.34l-.783.854 1.01.564c2.248 1.254 3.816 3.96 3.816 6.579 0 .309-.082.895-.156 1.326-.492.451-2.313 1.83-6.234 1.83-3.866 0-5.704-1.283-6.205-1.705-.078-.424-.186-1.08-.186-1.451zM16 2C8.28 2 2 8.28 2 16.001S8.28 30 16 30c7.719 0 14-6.279 14-13.999S23.719 2 16 2z%22/%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M16 27.82c3.922 0 5.742-1.379 6.234-1.83.074-.432.156-1.018.156-1.326 0-2.619-1.568-5.325-3.816-6.579l-1.01-.564.783-.854c.59-.646.915-1.476.915-2.34 0-1.918-1.58-3.478-3.523-3.478-1.941 0-3.521 1.56-3.521 3.479 0 .935.387 1.843 1.064 2.489l.847.811-.991.627c-2.078 1.314-3.529 3.95-3.529 6.409 0 .371.107 1.027.187 1.451.5.422 2.338 1.705 6.204 1.705z%22/%3E%3C/svg%3E" alt="">
-                <p ><a href="./SignIn.html" id="name">Sign in</a></p>
+                <p><a href="./SignIn.html"  id="name">Sign in</a></p>
             </div>
             <div>
                 <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M21.484 5.829c-1.927 0-3.457.719-4.545 2.139-.214.28-.543.447-.894.456a1.166 1.166 0 01-.92-.406c-1.244-1.452-2.892-2.189-4.894-2.189-3.692 0-5.897 2.36-5.897 6.32-.005.968.299 1.881.951 2.873.611.921 4.043 4.148 6.549 6.503 1.867 1.757 3.479 3.274 4.248 4.1l.002.002.002-.002a87.107 87.107 0 014-4.018l3.424-3.213c2.498-2.382 3.537-3.709 3.968-5.073.125-.393.188-.791.188-1.177 0-1.789-.611-3.403-1.721-4.543-1.129-1.16-2.672-1.772-4.461-1.772z%22/%3E%3Cpath fill%3D%22%23444%22 d%3D%22M27.478 13.321c-.431 1.364-1.47 2.691-3.968 5.073l-3.424 3.213a87.107 87.107 0 00-4 4.018l-.002.002-.002-.002c-.769-.826-2.381-2.343-4.248-4.1-2.506-2.355-5.938-5.582-6.549-6.503-.652-.992-.956-1.905-.951-2.873 0-3.96 2.205-6.32 5.897-6.32 2.002 0 3.65.737 4.894 2.189.23.267.567.417.92.406.351-.009.68-.176.894-.456 1.088-1.42 2.618-2.139 4.545-2.139 1.789 0 3.332.612 4.461 1.772 1.11 1.14 1.721 2.754 1.721 4.543 0 .386-.063.784-.188 1.177zM21.484 3.5c-2.181 0-4.058.724-5.509 2.088C14.408 4.224 12.45 3.5 10.231 3.5 5.232 3.5 2 6.893 2 12.144c-.006 1.424.432 2.785 1.339 4.161.706 1.066 3.303 3.539 6.895 6.918 1.76 1.653 3.422 3.216 4.138 3.987l.857.919a1.167 1.167 0 001.706 0l.858-.917a88.857 88.857 0 013.898-3.916l1.707-1.603 1.721-1.616c2.42-2.304 3.943-4.034 4.584-6.054A6.21 6.21 0 0030 12.144c0-2.399-.846-4.588-2.381-6.166C26.064 4.38 23.885 3.5 21.484 3.5z%22/%3E%3C/svg%3E" alt="">
@@ -299,10 +453,10 @@
                 <p>4-14</p>
             </div>
             <div>
-                <h3 onclick="location.href='./Collection.html'">Collections</h3>
+                <h3>Collections</h3>
             </div>
             <div>
-                <h3 onclick="location.href='./Sale.html'">Sale</h3>
+                <h3>Sale</h3>
             </div>
         </div>
         <div>
@@ -314,24 +468,195 @@
         <p>CLEARANCE STARTING AT $3.99</p>
         
     </div>
-    
     <hr>
     
-    <div class="order-container">
-        <!-- The data will be added here by JavaScript -->
-        <h2 class="ordernow">You didn't order anything till now <br> <a href="./index.html">Click here</a> <br> for start shoping</h2>
-        
+    <!-- do evrything here -->
+    <a href="./index.html" id="ab">Home > </a><span>Baby clothes</span>
+    <div class="container">
+        <h2>Baby Clothes</h2>
+        <p>Effortless essentials, special little styles and so much more. See why parents have loved our baby clothes for generations.</p>
+        <div class="line"> 
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q1_2023_cslps/CAR_CSLPS_Q4_22_omni_Valentines_Baby.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Family Matching</h2>
+                    <h4>These looks are even better worn together. Snag sweet styles from baby to adult.</h4>
+                    <a href="">SHOP FAMILY MATCHING
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q4_2022_cslps/CAR_CSLPS_Q4_22_omni_outerwear.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Outerwear Shop</h2>
+                    <h4>Stay warm in any cold-weather occasion with fleece, heavy-fill puffers, vests & more. </h4>
+                    <a href="">SHOP OUTERWEAR
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px dotted #339;">
+        <h3>Shop by Gender</h3>
+        <div class="gender">
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/faces/car_Q4_2022_visualfilters_bg.jpg?yocs=4E_4G_" alt="">
+            <a href="">Baby Girl</a>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/faces/car_Q4_2022_visualfilters_bb.jpg?yocs=4E_4G_" alt="">
+            <a href="">Baby Boy</a>
+            </div>
+        </div>
+        <hr style="border: 1px dotted #339;">
+        <h3>Shop by Size</h3>
+        <div class="size">
+            <h1>P</h1>
+            <h1>NB</h1>
+            <h1>3M</h1>
+            <h1>6M</h1>
+            <h1>9M</h1>
+            <h1>12M</h1>
+            <h1>18M</h1>
+            <h1>24M</h1>
+        </div>
+        <hr style="border: 1px dotted #339;">
+        <h3>Shop by Category</h3>
+        <div class="category">
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q4_2022_cslps/baby/CAR_CSLPS_Q4_22_BB_ShopAll.jpg?yocs=4E_4G_" alt="">
+                <h4>Shop All Baby</h4>
+                <a href="">Shop All Baby</a>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_BG_BB_Baby_BoldBasics.jpg?yocs=4E_4G_" alt="">
+                <h4>Bold Basics</h4>
+                <a href="">SHOP BABY BASICS</a>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_genderneutralcslps/Car_omni_genderneutral_baby1pc.jpg?yocs=4E_4G_" alt="">
+                <h4>One Piece</h4>
+                <a href="">SHOP BABY ONE PIECE</a>
+            </div>
+        </div>
+        <div class="line"> 
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_LCT.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Licensed Character Shop</h2>
+                    <h4>So they can wear their favorite friends on their tees.</h4>
+                    <a href="">SHOP CHARACTER STYLES
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_LFT.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Licensed Fan Shop</h2>
+                    <h4>Gear up and make it a season to remember.
+
+                    </h4>
+                    <a href="">SHOP FAN STYLES
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_SH.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Skip Hop</h2>
+                    <h4>Innovative & stylish Must-Haves Made Better® for playtime, bathtime & all the time!</h4>
+                    <a href="">SHOP SKIP HOP
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_Doorbusters.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Doorbusters</h2>
+                    <h4>Deals going on right now. Grab them before they’re gone!</h4>
+                    <a href="">SHOP DOORBUSTERS
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_Clearance.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>Clearance</h2>
+                    <h4>Score big savings! We’re always adding new things.</h4>
+                    <a href="">SHOP CLEARANCE
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.282/content/dam/ecomm/ec_creative_carters/2022/cslp%27s/car_q3_2022_cslps/CAR_CSLPS_Q3_22_NewArrivals.jpg?yocs=4E_4G_" alt="">
+                <div>
+                    <h2>New Arrivals</h2>
+                    <h4>Style drop! See what’s fresh.</h4>
+                    <a href="">SHOP NEW ARRIVALS
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://s7img.carters.com/is/image/carters/CAR_Q1_2022_giftcards_evergreen" alt="">
+                <div>
+                    <h2>Gift Cards</h2>
+                    <h4>Gifting made easy. Always the perfect fit!</h4>
+                    <a href="">SHOP GIFT CARDS
+
+                    </a>
+                </div>
+            </div>
+            
+
+        </div>
+        <hr style="border: 1px dotted #339;">
+        <h3>Life With Kids</h3>
+        <div class="blog">
+            <div>
+                <img src="https://s7img.carters.com/is/image/carters/CART101(2)" alt="">
+                <div>
+                    <h2>The Ultimate Guide to Carter’s Original Bodysuit</h2>
+                    <h3>Carter’s bodysuits are the perfect base layer to every baby’s outfit.</h3>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <div class="blogs">
+                <div>
+                    <img src="https://s7img.carters.com/is/image/williamcarter/CART139" alt="">
+                    <h3><a href="">The Baby Sleep Shop: 8 Things Every Baby Needs</a></h3>
+                </div>
+                <div>
+                    <img src="https://s7img.carters.com/is/image/williamcarterstage/CART066" alt="">
+                    <h3><a href="">Diaper Bag Essentials to Always Have on Hand</a></h3>
+                </div>
+                <div>
+                    <img src="https://s7img.carters.com/is/image/carters/CART256" alt="">
+                    <h3><a href="">
+                        How to Plan a Baby’s Nap Schedule</a></h3>
+                </div>
+                
+            </div>
+            <button>VISIT THE BLOG</button>
+        </div>
     </div>
+
+
+
+
     <div class="details">
         <div>
             <div class="cont">
                 <div class="support">
                     <h4>SUPPORT</h4>
-                    <a href="">Customer Service</a><a href="">Accessibility Support</a><a href="">Shipping</a><a href="">Returns</a><a href="">Gift Cards</a><a href="">Today's Deals</a><a href="">Size Chart</a><a href="">My Account</a><a href="">Mamababy® Credit Card</a><a href="">My Rewarding Moments®</a><a href="">Contact Us</a>
+                    <a href="">Customer Service</a><a href="">Accessibility Support</a><a href="">Shipping</a><a href="">Returns</a><a href="">Gift Cards</a><a href="">Today's Deals</a><a href="">Size Chart</a><a href="./Account.html">My Account</a><a href="">Mamababy's® Credit Card</a><a href="">My Rewarding Moments®</a><a href="">Contact Us</a>
                 </div>
                 <div class="about">
                     <h4>ABOUT US</h4>
-                    <a href="">Mamababy Inc.</a><a href="">Life With Kids</a><a href="">Baby of the Month Contest</a><a href="">All Store Locations</a><a href="">Join Mamababy Affliate Program</a><a href="">Investor Relations</a><a href="">Careers</a><a href="">Raise the Future</a>
+                    <a href="">Mamababy's Inc.</a><a href="">Life With Kids</a><a href="">Baby of the Month Contest</a><a href="">All Store Locations</a><a href="">Join Mamababy's Affliate Program</a><a href="">Investor Relations</a><a href="">Careers</a><a href="">Raise the Future</a>
                 </div>
                 <div class="input">
                     <div>
@@ -355,7 +680,7 @@
         <div>
             <p class="rights">© 2023 Carter’s, Inc. All rights reserved.</p>
             <div class="policy">
-                <a href="">Google Ad Price Policy  </a>|<a href="">Terms and Conditions </a>|<a href=""> Privacy Statements </a>|<a href="">  Do Not Sell or Share My Personal Information  </a>|<a href="">Accessibility </a>|<a href="">Coupon Policy </a>|<a href="">  Product Recalls </a>|<a href=""> UK Tax Strategy </a>|<a href="">  International Sites </a>|<a href="">  Site map</a>
+                <a href="">Google Ad Price Policy  </a>|<a href="">Terms and Conditions </a>|<a href="./Privacy Policy.html"> Privacy Statements </a>|<a href="./Privacy Policy.html">  Do Not Sell or Share My Personal Information  </a>|<a href="">Accessibility </a>|<a href="">Coupon Policy </a>|<a href="">  Product Recalls </a>|<a href=""> Indian Tax Strategy </a>|<a href="">  International Sites </a>|<a href="">  Site map</a>
             </div>
         </div>
     </div>
@@ -370,10 +695,10 @@
 </html>
 <script>
     let Conditions=JSON.parse(localStorage.getItem("Conditions"))
-        let name=document.getElementById("name")
-        let n=Conditions[0].name
-        name.innerHTML=`<a href='./Account.html'>${n}</a>`;
-    
+    let name=document.getElementById("name")
+    let n=Conditions[0].name
+    name.innerHTML=`<a href='./Account.html'>${n}</a>`;
 
-    
+
+        
 </script>

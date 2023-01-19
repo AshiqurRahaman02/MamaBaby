@@ -6,7 +6,7 @@
         offerprice: "12.99",
         price: "$32.99" ,
         name: "Baby Characters 2-Way Zip Cotton Sleep Play",
-        companyname: "Carter's | Baby",
+        companyname: "Mamababy | Baby",
         id: "1"
         },
         {
@@ -14,15 +14,15 @@
         offerprice: "12.99",
         price: "$38.99" ,
         name: "Baby 3-Piece Floral Little Jacket Set",
-        companyname: "Carter's | Baby",
+        companyname: "Mamababy | Baby",
         id: "2"
         },
         {
             img: "https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.27b/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dwdc887b95/productimages/CF22G01H.jpg?sw=800&sh=1000&sfrm=jpg&yocs=4E_4G_",
         offerprice: "15.99",
         price: "$38.99" ,
-        name: "Toddler Carter's Slip-On Sneakers",
-        companyname: "Carter's | Baby",
+        name: "Toddler Mamababy Slip-On Sneakers",
+        companyname: "Mamababy | Baby",
         id: "3"
         },
         {
@@ -30,15 +30,15 @@
         offerprice: "4.99",
         price: "$30.99" ,
         name: "Baby Grandpa Collectible Bodysuit",
-        companyname: "Carter's | Baby",
+        companyname: "Mamababy | Baby",
         id: "4"
         },
         {
             img: "https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.27b/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dwff759d26/productimages/CS22R07H.jpg?sw=800&sh=1000&sfrm=jpg&yocs=4E_4G_",
         offerprice: "16.99",
         price: "$34.99" ,
-        name: "Toddler Carter's Daisy Recycled Shoes",
-        companyname: "Carter's | Baby",
+        name: "Toddler Mamababy Daisy Recycled Shoes",
+        companyname: "Mamababy | Baby",
         id: "5"
         }
 
@@ -70,7 +70,7 @@
             img2.setAttribute("src","./image/favorite_FILL0_wght400_GRAD0_opsz48.svg")
             name.innerText=item.name
             compani.innerText=item.companyname
-            img3.setAttribute("src","./image/cart.svg")
+            img3.setAttribute("src","./image/shopping_cart_FILL0_wght400_GRAD0_opsz20.svg")
 
             img3.addEventListener("click",()=>{
                 let cart = JSON.parse(localStorage.getItem("cart"))
@@ -140,7 +140,7 @@
 
             name.innerText=item.name
             compani.innerText=item.companyname
-            img3.setAttribute("src","./image/cart.svg")
+            img3.setAttribute("src","./image/shopping_cart_FILL0_wght400_GRAD0_opsz20.svg")
 
             img3.addEventListener("click",()=>{
                 let cart = JSON.parse(localStorage.getItem("cart"))
