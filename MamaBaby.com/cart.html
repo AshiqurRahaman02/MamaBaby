@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIgn In Page</title>
+    <title>My Cart</title>
     <link  rel="icon" href="./image/favicon-32x32.png" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,7 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             justify-content: space-between;
         }
-        .nav>div{
-            
-            display: flex;
-            
-        }
+        
         .nav>div:nth-child(1){
             margin-top: -20px;
             margin-left: 3%;
@@ -66,8 +62,6 @@
             margin-left: 67px;
             width: 5%;
             cursor: pointer;
-
-            
             
         }
         .menu>div:nth-child(2){
@@ -122,64 +116,119 @@
             height: 1px;
             background-color: rgb(0, 122, 222);
         }
-        .singin{
-            width: 50%;
-            
+        .wishlist-container{
+            width: 70%;
             margin: auto;
-            padding-bottom: 200px;
-        }
-        form>div:nth-child(2){
+            background-color: rgb(255, 251, 247);
+            margin-top: -9px;
+            padding-top: 10px;
             display: grid;
-            
-            grid-template-columns: repeat(2,1fr);
-            
+            padding-left: 10px;
+            padding-right: 10px;
+            grid-template-columns: repeat(1,1fr);
         }
-        form>div:nth-child(2)>input{
+        .wishlist-container>div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+        }
+        .wishlist-container>div:nth-child(1)>h2{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        .wishlist-container>div:nth-child(1)>button{
+            margin-top: 2%;
+            margin-right: 2.5%;
             height: 40px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-        form>div:nth-child(3){
-            display: flex;
-            margin-left: 5px;
-        }
-        form>div:nth-child(3)>a{
-            margin-left: 70%;
-            margin-top: 20px;
-        }
-        form>input{
-            margin-left: 29%;
-            width: 400px;
-            height: 35px;
-            margin-bottom: 30px;
-        }
-        form~h4{
-            text-align: center;
-            margin-top: 50px;
-        }
-        #ceateAccount{
-            margin-left: 29%;
-            width: 400px;
-            height: 35px;
-        }
-        .singin h3{
-            text-align: center;
-        }
-        .logo{
-            display: flex;
-            width: 30%;
-            margin: auto;
-            margin-bottom: 20px;
-            gap: 20px;
-            
-        }
-        .logo img{
-            width: 20%;
-            margin-left: 16px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            background-color: rgb(111, 222, 86);
             cursor: pointer;
+        }
+        .wishlist-container hr{
+            height: 2px;
+            width: 100%;
+            background-color: rgb(42, 46, 47);
+        }
+        .wishlist-container>hr:nth-child(2){
+            height: 2px;
+            width: 101.4%;
+            margin-left: -10px;
+            background-color: rgb(135, 209, 228);
+        }
+        .wishlist-container>div{
+            margin-left: 20px;
+            display: flex;
+        }
+        .wishlist-container>div>img:nth-child(1){
+            width: 15%;
+        }
+        .wishlist-container>div>div:nth-child(2){
+            height: 100px;
+            width: 100%;
+            margin-left: 30px;
+        }
+        .wishlist-container>div>div:nth-child(2)>button:nth-child(1){
+            
+            margin: 0px;
+            margin-left: 83%;
+            height: 30px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            background-color: rgb(228, 242, 225);
+            cursor: pointer;
+        }
+        
+        .wishlist-container>div>div:nth-child(2)>h3:nth-child(2){
+            font-size: 200%;
+            display: block;
+        }
+        .wishlist-container>div>div:nth-child(2)>h4:nth-child(3){
+            font-size: 100%;
+            margin-top: -2%;
+            display: block;
+            color: rgb(34, 89, 71);
+        }
+        .wishlist-container>div>div:nth-child(2)>img:nth-child(4){
+            width: 3%;
+            margin-left: 90%;
+            margin-top: -1%;
+            cursor: pointer;
+
+        }
+        .wishlist-container>div>div:nth-child(2)>h2:nth-child(5){
+            font-size: 150%;
+            display: block;
+            margin-top: -2%;
+
+        }
+        .wishlist-container>div>div:nth-child(2)>p:nth-child(6){
+            font-size: 13px;
+            display: block;
+            text-decoration: line-through;
+            margin-top: -2%;
+
+        }
+        .wishlist-container>div>div:nth-child(2)>div:nth-child(7)>button{
+            width: 3%;
+            height: 30px;
+            cursor: pointer;
+        }
+        .wishlist-container>div>div:nth-child(2)>div:nth-child(7)>span{
+            font-size: 220%;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
         }
         .details{
             background-color: rgb(249, 246, 241);
+            margin-top: 20px;
             padding: 20px;
         }
         .details a:hover{
@@ -305,7 +354,6 @@
     <div class="nav">
         <div>
             <h3><a href="./index.html">Mama<span>Baby</span></a></h3>
-
         </div>
         <div>
             <h3>Free Shipping on $35+ Orders</h3>
@@ -313,7 +361,7 @@
         <div>
             <div>
                 <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23444%22 d%3D%22M24.205 24.963c.008-.105.012-.207.012-.299 0-2.908-1.564-5.892-3.895-7.612.495-.82.767-1.756.767-2.725 0-2.927-2.399-5.309-5.35-5.309-2.948 0-5.348 2.382-5.348 5.309 0 1.073.332 2.12.933 2.995-2.147 1.76-3.542 4.587-3.542 7.343 0 .092.004.193.012.299-2.432-2.225-3.968-5.413-3.968-8.962 0-6.709 5.461-12.17 12.174-12.17s12.174 5.46 12.174 12.17c0 3.548-1.536 6.736-3.969 8.961zm-14.597-.299c0-2.459 1.451-5.095 3.529-6.409l.991-.627-.847-.811a3.454 3.454 0 01-1.064-2.489c0-1.92 1.58-3.479 3.521-3.479 1.943 0 3.523 1.56 3.523 3.478 0 .864-.325 1.694-.915 2.34l-.783.854 1.01.564c2.248 1.254 3.816 3.96 3.816 6.579 0 .309-.082.895-.156 1.326-.492.451-2.313 1.83-6.234 1.83-3.866 0-5.704-1.283-6.205-1.705-.078-.424-.186-1.08-.186-1.451zM16 2C8.28 2 2 8.28 2 16.001S8.28 30 16 30c7.719 0 14-6.279 14-13.999S23.719 2 16 2z%22/%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M16 27.82c3.922 0 5.742-1.379 6.234-1.83.074-.432.156-1.018.156-1.326 0-2.619-1.568-5.325-3.816-6.579l-1.01-.564.783-.854c.59-.646.915-1.476.915-2.34 0-1.918-1.58-3.478-3.523-3.478-1.941 0-3.521 1.56-3.521 3.479 0 .935.387 1.843 1.064 2.489l.847.811-.991.627c-2.078 1.314-3.529 3.95-3.529 6.409 0 .371.107 1.027.187 1.451.5.422 2.338 1.705 6.204 1.705z%22/%3E%3C/svg%3E" alt="">
-                <p><a href="./CreateAccount.html" id="name">Create Account</a></p>
+                <p ><a href="./SignIn.html" id="name">Sign in</a></p>
             </div>
             <div>
                 <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M21.484 5.829c-1.927 0-3.457.719-4.545 2.139-.214.28-.543.447-.894.456a1.166 1.166 0 01-.92-.406c-1.244-1.452-2.892-2.189-4.894-2.189-3.692 0-5.897 2.36-5.897 6.32-.005.968.299 1.881.951 2.873.611.921 4.043 4.148 6.549 6.503 1.867 1.757 3.479 3.274 4.248 4.1l.002.002.002-.002a87.107 87.107 0 014-4.018l3.424-3.213c2.498-2.382 3.537-3.709 3.968-5.073.125-.393.188-.791.188-1.177 0-1.789-.611-3.403-1.721-4.543-1.129-1.16-2.672-1.772-4.461-1.772z%22/%3E%3Cpath fill%3D%22%23444%22 d%3D%22M27.478 13.321c-.431 1.364-1.47 2.691-3.968 5.073l-3.424 3.213a87.107 87.107 0 00-4 4.018l-.002.002-.002-.002c-.769-.826-2.381-2.343-4.248-4.1-2.506-2.355-5.938-5.582-6.549-6.503-.652-.992-.956-1.905-.951-2.873 0-3.96 2.205-6.32 5.897-6.32 2.002 0 3.65.737 4.894 2.189.23.267.567.417.92.406.351-.009.68-.176.894-.456 1.088-1.42 2.618-2.139 4.545-2.139 1.789 0 3.332.612 4.461 1.772 1.11 1.14 1.721 2.754 1.721 4.543 0 .386-.063.784-.188 1.177zM21.484 3.5c-2.181 0-4.058.724-5.509 2.088C14.408 4.224 12.45 3.5 10.231 3.5 5.232 3.5 2 6.893 2 12.144c-.006 1.424.432 2.785 1.339 4.161.706 1.066 3.303 3.539 6.895 6.918 1.76 1.653 3.422 3.216 4.138 3.987l.857.919a1.167 1.167 0 001.706 0l.858-.917a88.857 88.857 0 013.898-3.916l1.707-1.603 1.721-1.616c2.42-2.304 3.943-4.034 4.584-6.054A6.21 6.21 0 0030 12.144c0-2.399-.846-4.588-2.381-6.166C26.064 4.38 23.885 3.5 21.484 3.5z%22/%3E%3C/svg%3E" alt="">
@@ -332,7 +380,6 @@
     <div class="menu">
         <img src="./image/logo.png" alt="" onclick="location.href='./index.html'">
 
-        
         <div>
             <div>
                 <h3>Baby</h3>
@@ -359,118 +406,176 @@
         </div>
     </div>
     <div class="announcement">
-        <p>Join My Rewarding Moments® | all the little things add up!</p>
+        <p>CLEARANCE STARTING AT $3.99</p>
         
-    </div>
-    <hr>
-    <div class="singin">
-        <form action="">
-            <h1>Hi, welcome back!</h1>
-        <div>
-            <input type="email" id="email" placeholder="Enter your email or number here">
-            <input type="password" id="password" placeholder="Create a strong password">
-        </div>
-        <div>
-            <input type="checkbox" name="" id="">
-            <h3>Keep me sing in</h3>
-            <a href="">Forgot password?</a>
-        </div>
-        <input type="submit">
-        </form>
-        <hr>
-        <h3>or</h3>
-        
-        <h3>Sign In with</h3>
-        <div class="logo">
-            <img src="./image/google.svg" alt=""><img src="./image/apple.svg" alt=""><img src="./image/facebook.svg" alt="">
-        </div>
-
-        <h4>New to our site or enrolled in My Rewarding Moments™ in store?</h4>
-        <button onclick="location.href='./CreateAccount.html'" id="ceateAccount">Create Account</button>
     </div>
     
-        <div class="details">
-            <div>
-                <div class="cont">
-                    <div class="support">
-                        <h4>SUPPORT</h4>
-                        <a href="">Customer Service</a><a href="">Accessibility Support</a><a href="">Shipping</a><a href="">Returns</a><a href="">Gift Cards</a><a href="">Today's Deals</a><a href="">Size Chart</a><a href="">My Account</a><a href="">Carter's® Credit Card</a><a href="">My Rewarding Moments®</a><a href="">Contact Us</a>
+    <hr>
+    
+    <div class="wishlist-container">
+        <!-- The data will be added here by JavaScript -->
+        <div>
+            <h2>Total Price:- Only $<span id="total"> 0</span></h2>
+            <button>Order Now</button>
+        </div>
+        <hr>
+        
+    </div>
+    <div class="details">
+        <div>
+            <div class="cont">
+                <div class="support">
+                    <h4>SUPPORT</h4>
+                    <a href="">Customer Service</a><a href="">Accessibility Support</a><a href="">Shipping</a><a href="">Returns</a><a href="">Gift Cards</a><a href="">Today's Deals</a><a href="">Size Chart</a><a href="">My Account</a><a href="">Carter's® Credit Card</a><a href="">My Rewarding Moments®</a><a href="">Contact Us</a>
+                </div>
+                <div class="about">
+                    <h4>ABOUT US</h4>
+                    <a href="">Carter's Inc.</a><a href="">Life With Kids</a><a href="">Baby of the Month Contest</a><a href="">All Store Locations</a><a href="">Join Carter's Affliate Program</a><a href="">Investor Relations</a><a href="">Careers</a><a href="">Raise the Future</a>
+                </div>
+                <div class="input">
+                    <div>
+                        <input type="text" placeholder="Savings delivered right to your inbox">
+                        <img src="./image/arrow_forward.svg" alt="">
                     </div>
-                    <div class="about">
-                        <h4>ABOUT US</h4>
-                        <a href="">Carter's Inc.</a><a href="">Life With Kids</a><a href="">Baby of the Month Contest</a><a href="">All Store Locations</a><a href="">Join Carter's Affliate Program</a><a href="">Investor Relations</a><a href="">Careers</a><a href="">Raise the Future</a>
+                    <div>
+                        <input type="number" placeholder="Enter zip code to find a store">
+                        <img src="./image/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                     </div>
-                    <div class="input">
-                        <div>
-                            <input type="text" placeholder="Savings delivered right to your inbox">
-                            <img src="./image/arrow_forward.svg" alt="">
-                        </div>
-                        <div>
-                            <input type="number" placeholder="Enter zip code to find a store">
-                            <img src="./image/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="./image/facebook.svg" alt="" style="width:12%"><img src="./image/pinterest.svg" alt="" ><img src="./image/twitter.svg" alt=""><img src="./image/youtube.svg" alt=""><img src="./image/instagram.svg" alt="">
-                            
-                        </div>
-                        <div>
-                            <p>Ship To: <span>India</span> | <a href="">Change</a> </p> 
-                        </div>
+                    <div class="icon">
+                        <img src="./image/facebook.svg" alt="" style="width:12%"><img src="./image/pinterest.svg" alt="" ><img src="./image/twitter.svg" alt=""><img src="./image/youtube.svg" alt=""><img src="./image/instagram.svg" alt="">
+                        
+                    </div>
+                    <div>
+                        <p>Ship To: <span>India</span> | <a href="">Change</a> </p> 
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="rights">© 2023 Carter’s, Inc. All rights reserved.</p>
-                <div class="policy">
-                    <a href="">Google Ad Price Policy  </a>|<a href="">Terms and Conditions </a>|<a href=""> Privacy Statements </a>|<a href="">  Do Not Sell or Share My Personal Information  </a>|<a href="">Accessibility </a>|<a href="">Coupon Policy </a>|<a href="">  Product Recalls </a>|<a href=""> UK Tax Strategy </a>|<a href="">  International Sites </a>|<a href="">  Site map</a>
-                </div>
+        </div>
+        <div>
+            <p class="rights">© 2023 Carter’s, Inc. All rights reserved.</p>
+            <div class="policy">
+                <a href="">Google Ad Price Policy  </a>|<a href="">Terms and Conditions </a>|<a href=""> Privacy Statements </a>|<a href="">  Do Not Sell or Share My Personal Information  </a>|<a href="">Accessibility </a>|<a href="">Coupon Policy </a>|<a href="">  Product Recalls </a>|<a href=""> UK Tax Strategy </a>|<a href="">  International Sites </a>|<a href="">  Site map</a>
             </div>
         </div>
-        <div class="DISCLAIMERS">
-            <h4>*EXCLUSIONS AND DISCLAIMERS.</h4>
-            <h4>UP TO 60% OFF: Savings based on MSRP. Excludes Select New Arrivals, LITTLE PLANET®, Sneak Peek, Treasure Box, Licensed Styles, SKIP HOP®, Doorbusters, and Clearance. Other exclusions may apply.</h4>
-            <h4>UP TO 70% OFF CLEARANCE: Savings based on MSRP.</h4>
-            <h4>*MSRP is our Manufacturer’s Suggested Retail Price at which we suggest our collections be initially offered. We list an MSRP on our products that we sell ourselves and that sell through our wholesale partners. Our wholesale partners are free to use our MSRP or set a different selling price. We generally introduce our new collections at MSRP on our website. Since MSRP is a suggested price, actual sales may or may not have been made at MSRP in any certain area or in all areas. Prices may vary by channel or location.</h4>
-            <h4>Many of our collections have a DOB (Date of Birth) on the price tag or on their website product page. This is the date that this item or a similar item was originally offered for sale at the MSRP.</h4>
-        </div>
+    </div>
+    <div class="DISCLAIMERS">
+        <h4>*EXCLUSIONS AND DISCLAIMERS.</h4>
+        <h4>UP TO 60% OFF: Savings based on MSRP. Excludes Select New Arrivals, LITTLE PLANET®, Sneak Peek, Treasure Box, Licensed Styles, SKIP HOP®, Doorbusters, and Clearance. Other exclusions may apply.</h4>
+        <h4>UP TO 70% OFF CLEARANCE: Savings based on MSRP.</h4>
+        <h4>*MSRP is our Manufacturer’s Suggested Retail Price at which we suggest our collections be initially offered. We list an MSRP on our products that we sell ourselves and that sell through our wholesale partners. Our wholesale partners are free to use our MSRP or set a different selling price. We generally introduce our new collections at MSRP on our website. Since MSRP is a suggested price, actual sales may or may not have been made at MSRP in any certain area or in all areas. Prices may vary by channel or location.</h4>
+        <h4>Many of our collections have a DOB (Date of Birth) on the price tag or on their website product page. This is the date that this item or a similar item was originally offered for sale at the MSRP.</h4>
+    </div>
 </body>
 </html>
 <script>
-    let AccountData=JSON.parse(localStorage.getItem("AccountData"))
-    if(AccountData===null){
-        alert("You don't have accout Creat accout")
-    }
-    
-    let email=document.getElementById("email")
-    let password=document.getElementById("password")
-    let checkbox=document.getElementById("checkbox")
-    let submit=document.getElementById("submit")
-    let form=document.querySelector("form")
-
-    
-    for(let data of AccountData){
-        form.addEventListener("submit",(e)=>{
-        
-        e.preventDefault();
-        if((email.value===data.email||email.value===data.phoneNo)&&(password.value===data.password)){
-            
-            let Conditions=[]
-            let obj={
-                name:data.name
-            }
-            Conditions.push(obj)
-            localStorage.setItem("Conditions",JSON.stringify(Conditions))
-            
-            alert("Welcome back  "+data.name)
-        }
-        else{
-            alert("Check your email or password again")
-        }
-    })
-    }
     let Conditions=JSON.parse(localStorage.getItem("Conditions"))
         let name=document.getElementById("name")
         let n=Conditions[0].name
         name.innerHTML=`<a href='./Account.html'>${n}</a>`;
+    const cartTotal=document.getElementById("total")
+    let update=0
+    let cart = JSON.parse(localStorage.getItem("cart"))
+
+    let wishlistdisplay=document.querySelector(".wishlist-container")
+    for(let i=0;i<cart.length;i++){
+        let item=cart[i]
+        let  itemDiv = document.createElement('div');
+            let itemdiv=document.createElement('div');
+            let incdec=document.createElement('div');
+
+            let order=document.createElement("button")
+            let img=document.createElement("img")
+            let offer=document.createElement("h2")
+            let price=document.createElement("p")
+            let img2=document.createElement("img")
+            let name=document.createElement("h3")
+            let compani=document.createElement("h4")
+            let img3=document.createElement("img")
+            let hr=document.createElement("hr")
+            let inc=document.createElement("button")
+            let quantity=document.createElement("span")
+            let dec=document.createElement("button")
+
+
+
+
+            order.innerText="Order Now"
+            img.setAttribute("src",item.img)
+            offer.innerText=+item.offerprice
+            price.innerText=item.price
+            img2.setAttribute("src","./image/cart.svg")
+            name.innerText=item.name
+            compani.innerText=item.companyname
+            inc.innerText="+"
+            quantity.innerText=item.quantity
+            // console.log(quantity.innerText)
+            dec.innerText="-"
+
+
+
+
+
+            let total=offer.innerText*quantity.innerText
+            update+=total
+            // console.log(total)
+
+
+
+            img3.setAttribute("src","./image/delete_FILL0_wght400_GRAD0_opsz48.svg")
+            img2.addEventListener("click",()=>{
+                
+            })
+
+
+
+
+            inc.addEventListener("click",(e)=>{
+                update-=total
+                quantity.innerText++
+                
+                total=offer.innerText*quantity.innerText
+                update+=total
+                
+                cartTotal.innerText=update  
+                
+            })
+
+
+
+
+
+      dec.addEventListener("click",(e)=>{
+        update-=total
+        quantity.innerText--
+        total=+offer.innerText*+quantity.innerText
+        console.log(+total)
+        update+=total
+      cartTotal.innerText=update
+
+        
+      })
+
+      order.addEventListener("click",(e)=>{
+        
+      })
+            
+            offer.innerText="$"+offer.innerText
+            
+            incdec.append(inc,quantity,dec)
+            itemdiv.append(order,name,compani,img3,offer,price,incdec)
+
+            itemDiv.append(img,itemdiv)
+            wishlistdisplay.append(itemDiv,hr)
+            img3.addEventListener("click",(e)=>{
+                let rem=e.target.parentNode
+                wishlistdisplay.remove(rem)
+                cart.splice(i,1)
+                localStorage.setItem("cart",JSON.stringify(cart))
+                console.log(JSON.parse(localStorage.getItem("cart")))
+                location.reload()
+            })
+            
+    }
     
+    cartTotal.innerText=update
 </script>
