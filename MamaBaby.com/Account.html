@@ -13,6 +13,8 @@
     body{
             margin: 0px;
             padding: 0px;
+            margin-top: 100px;
+
         }
         .nav{
             display: flex;
@@ -22,6 +24,8 @@
             background-color: rgb(249, 249, 249);
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             justify-content: space-between;
+    margin-top: -100px;
+
         }
         
         .nav>div:nth-child(1){
@@ -177,6 +181,35 @@
         .account{
             height: 400px;
         }
+        .left{
+            width: 12%;
+            margin-left: 20px;
+        }
+        .left button{
+            width: 100%;
+            height: 40px;
+            border: 0px;
+            background-color: transparent;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .left img{
+            display: block;
+            margin-left: 80%;
+            cursor: pointer;
+            margin-top: -20px;
+
+        }
+        .cart img{
+            width: 15%;
+        }
+        .acc{
+            background-color: rgb(227, 228, 229);
+            margin-bottom: -10px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
 </style>
 </head>
 <body>
@@ -207,7 +240,14 @@
         </div>
     </div>
     <div class="account">
-
+        <div class="left">
+            <div class="acc"><button onclick="location.href='./Account.html'">Account <br> details <span><img src="./image/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></button></div><hr>
+            <div class="orders"><button onclick="location.href='./orders.html'">Orders <span><img src="./image/order_approve_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></button></div><hr>
+            <div class="wishlist"><button onclick="location.href='./wishlist.html'">wishlist <span><img src="./image/favorite_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></button></div><hr>
+            <div class="cart"><button onclick="location.href='./cart.html'">Cart <span><img src="./image/cart.svg" alt=""></span></button></div><hr>
+            <div class="giftcard"><button>giftcard <span><img src="./image/redeem_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></button></div><hr>
+            <div class="logout"><button>logout <span><img src="./image/logout_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></button></div>
+        </div>
     </div>
     <div class="details">
         <div>
@@ -257,6 +297,7 @@
 </html>
 <script>
     let Conditions=JSON.parse(localStorage.getItem("Conditions"))
+    console.log(Conditions)
     let name=document.getElementById("name")
     let n=Conditions[0].name
     name.innerHTML=`<a href='./Account.html'>${n}</a>`;
