@@ -1,10 +1,36 @@
 body{
-    margin: 0px;
+    margin-top: 60px;
     padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#navbar input{
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
+    border: 0.000000000000000000000000000000000000000000001px solid rgb(0, 251, 255);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 3px;
+}
+#navbar input::placeholder{
+    background-image: url('image/search_FILL0_wght400_GRAD0_opsz24.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-right: 10%;
 }
 .nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
     display: flex;
-    height: 45px;
+    
+    margin-top: -60px;
+    
     background-color: rgb(249, 249, 249);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     justify-content: space-between;
@@ -14,12 +40,13 @@ body{
     margin-top: -20px;
     margin-left: 3%;
     margin-right: 10%;
+    
     font-size: 25px;
     
 }
 .nav>div:nth-child(1) span{
     font-family: 'Indie Flower', cursive;
-    font-size: 20px;
+    font-size: 26px;
 }
 .nav>div:nth-child(2){
     margin-top: -5px;
@@ -71,22 +98,7 @@ body{
     /* margin-top: 27px; */
     margin-right: 75px;
 }
-.menu>div:nth-child(3)>input{
-    width: 300px;
-    height: 30px;
-    border: 0.000000000000000000000000000000000000000000001px solid rgb(0, 251, 255);
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 25px;
-    padding: 3px;
-}
-.menu>div:nth-child(3)>svg{
-    margin-left: -30px;
-    
-}
-.menu>div:nth-child(3)>svg:hover{
-    cursor: pointer;
-}
+
 .announcement{
     background-color: rgb(249, 249, 249);
     height: 50px;
@@ -127,20 +139,20 @@ body{
 #left>h1:nth-child(1){
     font-style: italic;
     color: white;
-    font-size: 70px;
+    font-size: 400%;
     margin-top: 0px;
     /* margin-bottom: 0px; */
 }
 #left>h1:nth-child(2){
     color: white;
-    font-size: 70px;
+    font-size: 400%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: -30px;
     margin-left: -120px;
 }
 #left>h1:nth-child(3){
     color: white;
-    font-size: 70px;
+    font-size:  400%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: -40px;
     margin-left: -120px;
@@ -151,7 +163,7 @@ body{
 }
 #right>h2:nth-child(1){
     color: white;
-    font-size: 40px;
+    font-size: 200%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* margin-top: -30px; */
     margin-left: -120px;
@@ -162,19 +174,20 @@ body{
 }
 #right>div:nth-child(2)>h1:nth-child(1){
     color: white;
-    font-size: 70px;
+    font-size: 600%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: -30px;
+    margin-left: -60px;
 }
 #right>div:nth-child(2)>h1:nth-child(3){
     color: white;
-    font-size: 70px;
+    font-size: 600%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: -30px;
 }
 #right>div:nth-child(2)>h1:nth-child(2){
     color: white;
-    font-size: 170px;
+    font-size: 1100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: -70px;
 }
@@ -186,7 +199,7 @@ body{
     margin-left: -120px;
 }
 .cont1>div:nth-child(2){
-    margin-top: -32px;
+    margin-top: -4%;
     height: 140px;
     background-color: rgb(159,16,18);
     border: 0px;
@@ -243,7 +256,7 @@ body{
     margin-bottom: 20px;
 }
 .cont1>div:nth-child(4)>div{
-    width: 50%;
+    /* width: 50%; */
     /* border: 3px solid black; */
     margin: auto;
     text-align: center;
@@ -252,7 +265,7 @@ body{
 .cont1>div:nth-child(4)>div>h1{
     color: rgb(237, 230, 230);
     margin-top: 28px;
-    font-size: 60px;
+    font-size: 300%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .cont1>div:nth-child(4)>div>h1>span{
@@ -341,8 +354,7 @@ body{
 }
 
 .slideshow-container {
-/* max-width: 1000px; */
-position: relative;
+
 margin: auto;
 display: grid;
 grid-template-columns: repeat(5,1fr);
@@ -375,8 +387,7 @@ gap: 10px;
 
 }
 .slideshow-container2 {
-/* max-width: 1000px; */
-position: relative;
+
 margin: auto;
 display: grid;
 grid-template-columns: repeat(5,1fr);
