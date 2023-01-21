@@ -1,5 +1,5 @@
 
-    
+    // window.location.href = "http://MamababyIndia.com";
     let data=[
         {
         img: "https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.27b/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw0f094690/productimages/1M219710.jpg?sw=800&sh=1000&sfrm=jpg&yocs=4E_4G_",
@@ -195,3 +195,23 @@
         let n=Conditions[0].name
         name.innerHTML=`<a href='./Account.html'>${n}</a>`;
 
+
+
+
+
+        // Get the navbar and search input elements
+  const navbar = document.querySelector("#navbar");
+  const searchInput = document.getElementById("search-input");
+
+  // Listen for the scroll event on the window
+  window.addEventListener("scroll", ()=> {
+    // Check if the user has scrolled more than 50px from the top
+    if (window.pageYOffset > 50) {
+      // If so, show the search input and add it to the navbar
+      searchInput.style.display = "block";
+      navbar.appendChild(searchInput);
+    } else {
+      // If not, hide the search input
+      searchInput.style.display = "none";
+    }
+  });
